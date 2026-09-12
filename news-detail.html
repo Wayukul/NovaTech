@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดการอบรม - NovaTech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="โลโก้ NovaTech"><span>NovaTech</span></a>
+      <div class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="jobs.html">ตำแหน่งงาน</a>
+        <a class="active" href="training.html">การอบรม</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container narrow">
+      <a href="news.html" class="back-link" style="color: #f6f6f6; margin-bottom: 20px;">← ย้อนกลับไปหน้าหลักสูตรการอบรม</a>
+      <p class="eyebrow" id="training-category">TRAINING DETAILS</p>
+      <h1 id="training-title">รายละเอียดการอบรม</h1>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container narrow">
+      <div class="detail-card">
+        <div class="detail-cover">
+          <img id="training-img" src="" alt="Training Cover">
+        </div>
+        
+        <div class="meta-tags">
+          <span class="pill" id="training-badge">Category</span>
+          <span style="color: var(--muted);" id="training-schedule">Schedule info</span>
+        </div>
+
+        <h2 id="training-h2" style="font-size: 1.8rem; margin: 15px 0;">ชื่อหัวข้ออบรม</h2>
+        <p id="training-desc" style="color: var(--muted); font-size: 1.05rem; line-height: 1.8;"></p>
+
+        <div class="syllabus-box">
+          <strong style="font-size: 1.1rem; color: var(--ink);">หัวข้อที่จะได้เรียนรู้ในคอร์สนี้:</strong>
+          <ul id="training-topics"></ul>
+        </div>
+
+        <!-- แถบปุ่มด้านล่าง -->
+        <div class="action-bar">
+          <div>
+            <strong style="display: block; font-size: 1.25rem;">สถานะ: เปิดรับสมัคร</strong>
+            <span style="color: var(--muted); font-size: 0.88rem;">สำหรับพนักงานและผู้ที่ได้รับคัดเลือก</span>
+          </div>
+          <button type="button" class="button primary" id="btn-register">ลงทะเบียน</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- กล่อง Modal แจ้งเตือนเมื่อกดปุ่ม -->
+  <div class="modal-overlay" id="modal-alert">
+    <div class="modal-card">
+      <div class="success-icon">✓</div>
+      <h3>สำเร็จ!</h3>
+      <p>คุณได้ลงทะเบียนการอบรมเรียบร้อยแล้ว ระบบได้บันทึกข้อมูลของคุณไว้ในระบบเรียบร้อย</p>
+      <button class="button primary" style="width: 100%;" id="btn-close-modal">รับทราบ</button>
+    </div>
+  </div>
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand light" href="index.html">
+        <img src="images/logo.svg" alt="">
+        <span>NovaTech</span>
+      </a>
+      <p>© 2026 NovaTech Company Limited</p>
+      <a href="mailto:careers@novatech.co.th">9/1 ถ.พหลโยธิน ต.คลองหนึ่ง อ.คลองหลวง ปทุมธานี 12120</a>
+    </div>
+</footer>
+ <script src="js/main.js"></script><script src="js/news-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="กรอกใบสมัครงานกับ NovaTech"><title>สมัครงาน | NovaTech Careers</title><link rel="icon" href="images/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"></head>
+<body class="apply-page">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="โลโก้ NovaTech"><span>NovaTech</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">เมนู</button>
+      <div class="nav-links" id="main-menu">
+        <a href="index.html">หน้าแรก</a>
+        <a class="active" href="jobs.html">ตำแหน่งงาน</a>
+        <a href="news.html">การอบรม</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        
+        <a class="nav-cta" href="jobs.html">ร่วมงานกับเรา</a>
+      </div>
+    </nav>
+  </header>
+  <main class="application-layout container">
+    <aside class="application-intro">
+      <a class="back-link" href="jobs.html">← กลับไปหน้าตำแหน่งงาน</a>
+      <p class="eyebrow">APPLICATION FORM</p>
+      <h1>สมัครตำแหน่ง<br>
+        <span id="position-title">งานกับ NovaTech</span></h1>
+        <p>กรอกข้อมูลให้ครบถ้วน ทีมงานจะตรวจสอบและติดต่อกลับทางอีเมลหรือโทรศัพท์ภายใน 7 วันทำการ</p>
+        <div class="process">
+          <div><span>1</span><p><strong>ส่งใบสมัคร</strong><small>กรอกข้อมูลและแนบลิงก์ผลงาน</small></p></div>
+          <div><span>2</span><p><strong>พูดคุยกับทีม</strong><small>รู้จักกันและแลกเปลี่ยนประสบการณ์</small></p></div>
+          <div><span>3</span><p><strong>เริ่มต้นบทใหม่</strong><small>รับข้อเสนอและร่วมงานกับเรา</small></p></div></div></aside>
+    <section class="form-card" aria-labelledby="form-heading">
+      <div class="form-heading"><span>ใบสมัครงาน</span>
+        <p>ช่องที่มี * จำเป็นต้องกรอก</p></div>
+        <form id="application-form" novalidate>
+          <input type="hidden" id="position" name="position">
+          <div class="form-grid">
+            <div class="field">
+              <label for="first-name">ชื่อ *</label>
+              <input id="first-name" name="firstName" type="text" autocomplete="given-name" required>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="last-name">นามสกุล *</label>
+              <input id="last-name" name="lastName" type="text" autocomplete="family-name" required>
+              <span class="error"></span>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="email">อีเมล *</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="phone">เบอร์โทรศัพท์ *</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="08x-xxx-xxxx" required>
+              <span class="error"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="education">ระดับการศึกษา *</label>
+            <select id="education" name="education" required>
+              <option value="">เลือกระดับการศึกษา</option>
+              <option>ปริญญาตรี</option>
+              <option>ปริญญาโท</option>
+              <option>ปริญญาเอก</option>
+              <option>อื่น ๆ</option>
+            </select>
+            <span class="error"></span>
+          </div>
+          <div class="field">
+            <label for="portfolio">ลิงก์ Resume หรือ Portfolio *</label>
+            <input id="portfolio" name="portfolio" type="url" placeholder="https://..." required>
+            <span class="error"></span>
+          </div>
+          <div class="field">
+            <label for="message">แนะนำตัวเพิ่มเติม</label>
+            <textarea id="message" name="message" rows="5" placeholder="เล่าประสบการณ์หรือเหตุผลที่สนใจตำแหน่งนี้"></textarea>
+          </div>
+          <label class="checkbox">
+            <input id="consent" name="consent" type="checkbox" required>        
+            <span>ฉันยินยอมให้ NovaTech จัดเก็บข้อมูลเพื่อใช้ในกระบวนการสมัครงาน *</span>
+          </label>
+          <span class("error consent-error")></span>
+          <button class("button primary submit-button") type("submit")>ส่งใบสมัคร <span aria-hidden("true")>→</span></button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand light" href="index.html">
+        <img src="images/logo.svg" alt="">
+        <span>NovaTech</span>
+      </a>
+      <p>© 2026 NovaTech Company Limited</p>
+      <a href="mailto:careers@novatech.co.th">9/1 ถ.พหลโยธิน ต.คลองหนึ่ง อ.คลองหลวง ปทุมธานี 12120</a>
+    </div>
+  </footer>
+    <script src="js/main.js"></script><script src="js/validation.js"></script>
+  </body></html>
