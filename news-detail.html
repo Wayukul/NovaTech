@@ -14,11 +14,13 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="เมนูหลัก">
       <a class="brand" href="index.html"><img src="images/logo.svg" alt="โลโก้ NovaTech"><span>NovaTech</span></a>
-      <div class="nav-links">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">เมนู</button>
+      <div class="nav-links" id="main-menu">
         <a href="index.html">หน้าแรก</a>
         <a href="jobs.html">ตำแหน่งงาน</a>
-        <a class="active" href="training.html">การอบรม</a>
+        <a class="active" href="news.html">การอบรม</a>
         <a href="about.html">เกี่ยวกับเรา</a>
+        <a class="nav-cta" href="jobs.html">ร่วมงานกับเรา</a>
       </div>
     </nav>
   </header>
@@ -43,7 +45,7 @@
           <span style="color: var(--muted);" id="training-schedule">Schedule info</span>
         </div>
 
-        <h2 id="training-h2" style="font-size: 1.8rem; margin: 15px 0;">ชื่อหัวข้ออบรม</h2>
+        <h2 id="training-h2">ชื่อหัวข้ออบรม</h2>
         <p id="training-desc" style="color: var(--muted); font-size: 1.05rem; line-height: 1.8;"></p>
 
         <div class="syllabus-box">

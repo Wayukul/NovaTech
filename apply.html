@@ -22,16 +22,30 @@
       <p class="eyebrow">APPLICATION FORM</p>
       <h1>สมัครตำแหน่ง<br>
         <span id="position-title">งานกับ NovaTech</span></h1>
-        <p>กรอกข้อมูลให้ครบถ้วน ทีมงานจะตรวจสอบและติดต่อกลับทางอีเมลหรือโทรศัพท์ภายใน 7 วันทำการ</p>
+        <p id="position-summary">กรอกข้อมูลให้ครบถ้วน ทีมงานจะตรวจสอบและติดต่อกลับทางอีเมลหรือโทรศัพท์ภายใน 7 วันทำการ</p>
+        <div class="job-facts" aria-label="ข้อมูลตำแหน่งงาน">
+          <div><small>รูปแบบงาน</small><strong>Full-time</strong></div>
+          <div><small>สถานที่</small><strong>ปทุมธานี / Hybrid</strong></div>
+          <div><small>เงินเดือน</small><strong id="position-salary">ตามประสบการณ์</strong></div>
+        </div>
+        <div class="job-skill-box">
+          <p class="job-skill-title">ทักษะที่ตำแหน่งนี้มองหา</p>
+          <ul id="position-skills">
+            <li>การทำงานร่วมกับทีม</li>
+            <li>การแก้ไขปัญหาอย่างเป็นระบบ</li>
+            <li>ความสนใจในเทคโนโลยี</li>
+          </ul>
+        </div>
         <div class="process">
           <div><span>1</span><p><strong>ส่งใบสมัคร</strong><small>กรอกข้อมูลและแนบลิงก์ผลงาน</small></p></div>
           <div><span>2</span><p><strong>พูดคุยกับทีม</strong><small>รู้จักกันและแลกเปลี่ยนประสบการณ์</small></p></div>
           <div><span>3</span><p><strong>เริ่มต้นบทใหม่</strong><small>รับข้อเสนอและร่วมงานกับเรา</small></p></div></div></aside>
     <section class="form-card" aria-labelledby="form-heading">
-      <div class="form-heading"><span>ใบสมัครงาน</span>
+      <div class="form-heading" id="form-heading"><span>ใบสมัครงาน</span>
         <p>ช่องที่มี * จำเป็นต้องกรอก</p></div>
         <form id="application-form" novalidate>
           <input type="hidden" id="position" name="position">
+          <div class="form-section-heading"><span>01</span><div><strong>ข้อมูลผู้สมัคร</strong><small>ข้อมูลสำหรับใช้ติดต่อกลับ</small></div></div>
           <div class="form-grid">
             <div class="field">
               <label for="first-name">ชื่อ *</label>
@@ -56,6 +70,7 @@
               <span class="error"></span>
             </div>
           </div>
+          <div class="form-section-heading"><span>02</span><div><strong>ข้อมูลการสมัคร</strong><small>ประวัติและข้อมูลประกอบการพิจารณา</small></div></div>
           <div class="field">
             <label for="education">ระดับการศึกษา *</label>
             <select id="education" name="education" required>
@@ -80,8 +95,8 @@
             <input id="consent" name="consent" type="checkbox" required>        
             <span>ฉันยินยอมให้ NovaTech จัดเก็บข้อมูลเพื่อใช้ในกระบวนการสมัครงาน *</span>
           </label>
-          <span class("error consent-error")></span>
-          <button class("button primary submit-button") type("submit")>ส่งใบสมัคร <span aria-hidden("true")>→</span></button>
+          <span class="error consent-error"></span>
+          <button class="button primary submit-button" type="submit">ส่งใบสมัคร <span aria-hidden="true">→</span></button>
         </form>
       </section>
     </main>
